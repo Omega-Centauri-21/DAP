@@ -33,7 +33,7 @@ class DetailView(APIView):
                 # getting user from in-built user model class.
                 user = User.objects.filter(auth_token=us[0]).first()
                 # getting student from student model by filtering based on user that we got.
-                details = Student.objects.get(user=user)
+                details = Patient.objects.get(user=user)
                 serializer = api_ser.DetailSerializer(
                     details, context={'request': request})       # Serializing the data into Json format.
                 return Response({'data': serializer.data, }, status=status.HTTP_200_OK)
