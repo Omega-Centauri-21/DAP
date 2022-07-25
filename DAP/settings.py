@@ -57,7 +57,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'CollegeERP.urls'
+ROOT_URLCONF = 'DAP.urls'
 
 TEMPLATES = [
     {
@@ -75,7 +75,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'CollegeERP.wsgi.application'
+WSGI_APPLICATION = 'DAP.wsgi.application'
 
 
 # Database
